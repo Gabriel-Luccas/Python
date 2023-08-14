@@ -12,13 +12,13 @@ vista = valor - (valor * 0.05)
 # valor sem auteração até 2x car~tão
 normal = valor
 # Juros
-juros = valor * 0.10
+juros = valor * 0.20
 montaine = valor + juros
 if opção == 4:
     parcela = int(input(f"Em quantas parcelas vai pagar: "))
     valor_parcela = montaine / parcela
     print(
-        f"Nesta opção o valor do produto tera 10% de juros ficando R${montaine} de R${normal} e foi pago em {parcela} parcelas cada uma sendo R${valor_parcela:.2F}"
+        f"Nesta opção o valor do produto tera 20% de juros ficando R${montaine} de R${normal} e foi pago em {parcela} parcelas cada uma sendo R${valor_parcela:.2F}"
     )
 elif opção == 1:
     print(
