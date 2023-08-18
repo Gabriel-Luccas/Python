@@ -1,7 +1,7 @@
 # receba 2 valores e mostre um menu de 5 opçoes soma , sub , mult , div e so ira sair do menu ao usar o 5
 print("celcular operações entre")
-numero1 = float(input("DIgite o primeiro Numero: "))
-numero2 = float(input("DIgite o segundo Bumero: "))
+numero1 = float(input("DIgite o primeiro numero: "))
+numero2 = float(input("DIgite o segundo numero: "))
 menu = 0
 while menu != 5:
     print("Digite 1 Soma")
