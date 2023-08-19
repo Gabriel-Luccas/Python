@@ -7,7 +7,11 @@ tentativas = 0
 print("Tente adivinhar o meu numero ^-^ ")
 ques = int(input("Digite um numero: "))
 while ques != ramdom:
-    print("Vocé perdeu")
+    if ques > ramdom:
+        print("Menor")
+    elif ques < ramdom:
+        print("Maior")
+    print("Vocé Errou T-T tente dnv")
     ques = int(input("Digite um numero: "))
     tentativas += 1
 print(f"Vocé ganhou,  mais teve que tentar {tentativas} vezes")
