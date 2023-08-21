@@ -6,4 +6,3 @@ termo = inicio + (termo_especifico - 1 ) * razão
 while inicio <= termo:
     print(inicio)
     inicio += razão
-  
