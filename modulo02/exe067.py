@@ -4,6 +4,6 @@ while True:
     if Tabuada_do < 0:
         break
     for c in range(1, 11):
-        print(f"{Tabuada_do} vezes {vezes} = {Tabuada_do*vezes}")
+        print(f"{Tabuada_do} x {vezes} = {Tabuada_do*vezes}")
         vezes += 1
 print("FIM")
