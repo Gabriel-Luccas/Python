@@ -1,0 +1,6 @@
+palavra01=str(input("Digite uma palavra: "))
+palavra02=str(input("Digite uma palavra: "))
+palavra03=str(input("Digite uma palavra: "))
+palavra04=str(input("Digite uma palavra: "))
+palavra05=str(input("Digite uma palavra: "))
+tu=(palavra01,palavra02,palavra03,palavra04,palavra05)
