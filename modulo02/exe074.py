@@ -10,3 +10,4 @@ for c in range(0, 6):
 t = tuple(lista)
 print(f"2 numeros sorteados {random.choice(t)} e {random.choice(t)}  ")
 print(f"Maior {max(lista)} e min {min(lista)}")
+    
