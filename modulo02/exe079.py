@@ -8,7 +8,10 @@ while True:
     opção = str(input("Deseja adicionar outro valor [N/S]: ")).upper().strip()
     if opção in "S":
         valor = int(input("Adicionar outro valor a lista: "))
-        lista_valores.append(valor)
+        if valor not in lista_valores:
+            lista_valores.append(valor)
+        else:
+            print("Valor duplicata não foi adicionado")
     elif opção in "N":
         print("OK iremos exibir a lista criada")
         break
