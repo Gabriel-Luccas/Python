@@ -1,4 +1,4 @@
-#confirmar se a expressão esta correta 
+#confirmar se a expressão esta correta a
 expre=str(input("Digite a expresão: "))
 pilha=[]
 for simb in expre:
