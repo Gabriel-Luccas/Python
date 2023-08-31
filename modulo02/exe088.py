@@ -5,5 +5,11 @@ numeros_por_lista = 6
 for _ in range(jogos):
     lista = []
     for _ in range(numeros_por_lista):
-        lista.append(random.randint(1, 10))
+        num = random.randint(1, 60)
+        if num not in lista:
+            lista.append(num)
+        else:
+            num1 = random.randint(1, 60)
+            list.append(num1)
+    lista.sort()
     print(lista)

@@ -13,7 +13,7 @@ while True:
     else:
         break
 print("Boletim geral abaixo: ")
-print("="*100)
+print("=" * 100)
 for aluno in Geral:
     media = (aluno[1][0] + aluno[1][1]) / 2
     print(
