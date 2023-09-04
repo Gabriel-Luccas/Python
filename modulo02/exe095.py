@@ -17,5 +17,6 @@ print("=-" * 50)
 print(
     f"O jogador {dados_jogador['nome']} jogou {dados_jogador['partidas jogadas']} partidas"
 )
+
 for partida, gols in enumerate(dados_jogador["gosl"], start=1):
     print(f"Na partida {partida} ele fez {gols} gols")
