@@ -13,7 +13,6 @@ def ficha(jogador="", gols=0):
 
 
 jogador = str(input("Nome do jogador: "))
-gols =(input("Gols : "))
+gols = input("Gols : ")
 dados_jogador = ficha(jogador, gols)
 print(dados_jogador)
-
