@@ -1,8 +1,5 @@
 # funçoes criadas para o exercicio 113
 
-
-
-
 def leiaint(numero):
     while True:
         try:
