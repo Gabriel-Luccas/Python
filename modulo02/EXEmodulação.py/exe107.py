@@ -1,16 +1,16 @@
-from ultilidades.moeda import double, half, PlusPorcent, ReducePorcent, verificar_numero, resume
-
-def obter_numero_valido():
-    while True:
-        entrada = input("Digite um valor: R$ ")
-        valido, numero = verificar_numero(entrada)
-        if valido:
-            return numero
-        else:
-            print("Entrada inválida. Digite um número válido.")
+from ultilidades.moeda import (
+    double,
+    half,
+    PlusPorcent,
+    ReducePorcent,
+    verificar_numero,
+    resume,
+    obter_numero_valido,
+    obter_porcentagem_valido,
+)
 
 numero = obter_numero_valido()
-porcent = float(input("Digite uma Porcentagem: "))
+porcent = obter_porcentagem_valido()
 
 dobro = double(numero)
 metade = half(numero)
