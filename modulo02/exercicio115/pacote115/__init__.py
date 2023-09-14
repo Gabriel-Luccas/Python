@@ -1,13 +1,22 @@
 lista_pessoas = [{"nome": "Gabriel", "idade": 20}]
+lista = [
+    "Mostrar Pessoas Cadastradas",
+    "Cadastrar novas pessoas",
+    "Mostrar Arquivo geral",
+    "Sair",
+]
+
+arq = "Curso em video.txt"
 
 
-def Menu():
+def Menu(lista):
     print("==" * 50)
     print("Menu de opçoes")
     print("--" * 50)
-    print(
-        "1 - Mostrar pessoas cadastradas\n2 - Cadastrar nova pessoa\n3 - Sair do sistema"
-    )
+    c = 1
+    for item in lista:
+        print(f"{c} - {item}")
+        c += 1
     print("==" * 50)
 
 
@@ -27,7 +36,7 @@ def get_valid_age_input():
     while True:
         try:
             idade = int(input("Idade: "))
-            if idade >= 0:  # Check if age is a non-negative integer
+            if idade >= 1:  # Check if age is a non-negative integer
                 return idade
             else:
                 print("Idade inválida. Digite uma idade válida.")
@@ -38,9 +47,9 @@ def get_valid_age_input():
 
 
 def opcao():
-    global lista_pessoas
+    global lista_pessoas, lista
     while True:
-        Menu()
+        Menu(lista)
         try:
             escolha = int(input("Sua opção: "))
             if escolha == 1:
@@ -53,10 +62,16 @@ def opcao():
                     idade = get_valid_age_input()
                     nova_pessoa = {"nome": nome, "idade": idade}
                     lista_pessoas.append(nova_pessoa)
+                    with open(arq, "at") as file:
+                        file.write(f"{nome} - {idade} anos\n")
                 except:
-                    print("Nome invalido")
+                    None
             elif escolha == 3:
-                print("Encerrando")
+                from pacote115.arquivo import leararquivo
+
+                leararquivo(arq)
+            elif escolha == 4:
+                print("encerrando")
                 exit()
             else:
                 print("Opção não está no menu")

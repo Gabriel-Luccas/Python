@@ -1,5 +1,4 @@
-from pacote115 import opcao , Menu
+from pacote115 import opcao
+from pacote115.arquivo import arqExiste, criarArq
 
-while True:
-    opcao()
-    
+opcao()
